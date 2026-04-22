@@ -19,13 +19,13 @@
     --white:    #f7f3e8;
     --flower:   rgba(255,255,255,0.06);
   }
-
+ 
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
   html {
     background: #162318;
   }
-
+ 
   body {
     background: #162318;
     color: var(--cream);
@@ -34,10 +34,10 @@
     min-height: 100vh;
     overflow-x: hidden;
   }
-
+ 
   /* ── 안개꽃 배경 텍스처 (SVG 인라인) ── */
-
-
+ 
+ 
   /* ── 표지 ── */
   #cover {
     min-height: 100vh;
@@ -49,7 +49,7 @@
     position: relative;
     z-index: 1;
   }
-
+ 
   .cover-frame {
     border: 1px solid var(--gold-dim);
     padding: 2.5rem 2rem;
@@ -82,14 +82,14 @@
   .corner-tr { top: -1px;  right: -1px; border-width: 2px 2px 0 0; }
   .corner-bl { bottom: -1px; left: -1px;  border-width: 0 0 2px 2px; }
   .corner-br { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; }
-
+ 
   .cover-label {
     font-size: 0.65rem;
     letter-spacing: 0.3em;
     color: var(--gold-dim);
     margin-bottom: 1.8rem;
   }
-
+ 
   .cover-title {
     font-family: 'Noto Serif KR', serif;
     font-size: clamp(2rem, 7vw, 3.5rem);
@@ -100,7 +100,7 @@
     letter-spacing: 0.05em;
     margin-bottom: 0.4rem;
   }
-
+ 
   .cover-author {
     font-family: 'Noto Serif KR', serif;
     font-size: 0.85rem;
@@ -108,14 +108,14 @@
     letter-spacing: 0.2em;
     margin-bottom: 1.8rem;
   }
-
+ 
   .cover-divider {
     width: 24px;
     height: 1px;
     background: var(--gold-dim);
     margin: 0 auto 1.8rem;
   }
-
+ 
   .cover-desc {
     font-size: 0.72rem;
     color: var(--muted);
@@ -124,10 +124,10 @@
     letter-spacing: 0.04em;
     margin-bottom: 2rem;
   }
-
+ 
   /* 이름·학번 입력 */
   .cover-inputs { width: 100%; }
-
+ 
   .input-row {
     margin-bottom: 1rem;
   }
@@ -153,7 +153,7 @@
     transition: border-color 0.2s;
   }
   .input-row input:focus { border-bottom-color: var(--gold-dim); }
-
+ 
   .cover-error {
     font-size: 0.72rem;
     color: var(--gold);
@@ -162,7 +162,7 @@
     min-height: 1rem;
     letter-spacing: 0.05em;
   }
-
+ 
   .cover-btn {
     width: 100%;
     margin-top: 1.2rem;
@@ -180,10 +180,10 @@
     background: rgba(200,169,110,0.12);
     border-color: var(--gold);
   }
-
+ 
   /* ── 앱 ── */
   #app { display: none; position: relative; z-index: 1; background: var(--bg); min-height: 100vh; }
-
+ 
   .phase-nav {
     position: sticky;
     top: 0;
@@ -196,7 +196,7 @@
     backdrop-filter: none;
   }
   .phase-nav::-webkit-scrollbar { display: none; }
-
+ 
   .phase-tab {
     flex-shrink: 0;
     padding: 0.95rem 1.1rem;
@@ -214,11 +214,11 @@
   }
   .phase-tab.active { color: var(--gold); border-bottom-color: var(--gold-dim); }
   .phase-tab.done::after { content: ' ✓'; color: var(--gold-dim); font-size: 0.58rem; }
-
+ 
   /* ── 섹션 ── */
   .section { display: none; padding: 2rem 1.4rem 5rem; max-width: 640px; margin: 0 auto; }
   .section.active { display: block; }
-
+ 
   .section-label {
     font-size: 0.62rem;
     letter-spacing: 0.3em;
@@ -241,7 +241,7 @@
     border-left: 2px solid var(--gold-dim);
     padding-left: 1rem;
   }
-
+ 
   /* ── 카드 ── */
   .card {
     background: var(--bg2);
@@ -255,7 +255,7 @@
     color: var(--gold-dim);
     margin-bottom: 0.6rem;
   }
-
+ 
   .card-connection {
     font-size: 0.78rem;
     color: var(--muted);
@@ -267,7 +267,7 @@
     text-align: justify;
   }
   .card-connection strong { color: var(--cream); font-weight: 400; }
-
+ 
   /* 질문 태그 */
   .q-tag {
     display: inline-block;
@@ -282,7 +282,7 @@
   .q-tag.interpret { color: #9e9a6a; border-color: #9e9a6a; }
   .q-tag.extend    { color: #7a8e9e; border-color: #7a8e9e; }
   .q-tag.post      { color: var(--gold-dim); border-color: var(--gold-dim); }
-
+ 
   .card-question {
     font-family: 'Noto Serif KR', serif;
     font-size: 0.95rem;
@@ -299,7 +299,7 @@
     padding-left: 0.7rem;
     border-left: 1px solid var(--border);
   }
-
+ 
   textarea {
     width: 100%;
     background: var(--bg);
@@ -317,7 +317,7 @@
   }
   textarea:focus { border-color: var(--gold-dim); }
   textarea::placeholder { color: #2e3d28; }
-
+ 
   .char-count {
     text-align: right;
     font-size: 0.62rem;
@@ -325,7 +325,7 @@
     margin-top: 0.3rem;
   }
   .char-count.warn { color: var(--gold); }
-
+ 
   /* 저장 버튼 */
   .save-btn {
     width: 100%;
@@ -342,7 +342,7 @@
   }
   .save-btn:hover { background: rgba(200,169,110,0.1); border-color: var(--gold); }
   .save-btn:disabled { border-color: var(--border); color: var(--muted2); cursor: default; }
-
+ 
   .saved-msg {
     text-align: center;
     font-size: 0.72rem;
@@ -351,7 +351,7 @@
     margin-top: 0.5rem;
     height: 1.2rem;
   }
-
+ 
   /* 자동저장 표시 */
   .autosave-bar {
     height: 1.2rem;
@@ -361,7 +361,7 @@
     letter-spacing: 0.08em;
     margin-bottom: 0.5rem;
   }
-
+ 
   /* 기행 후 — 나의 질문 불러오기 */
   .recall-box {
     background: var(--bg);
@@ -384,7 +384,7 @@
     font-style: italic;
   }
   .recall-empty { color: var(--muted2); font-style: normal; font-size: 0.78rem; }
-
+ 
   /* 완료 */
   .complete-screen {
     text-align: center;
@@ -421,7 +421,7 @@
 </style>
 </head>
 <body>
-
+ 
 <!-- 표지 -->
 <div id="cover">
   <div class="cover-frame">
@@ -452,23 +452,23 @@
     </div>
   </div>
 </div>
-
+ 
 <!-- 앱 -->
 <div id="app">
   <nav class="phase-nav">
     <button class="phase-tab active" id="tab-s1"   onclick="showSection('s1')">① 기록관</button>
     <button class="phase-tab"        id="tab-s2"   onclick="showSection('s2')">② 도청·광장</button>
-    <button class="phase-tab"        id="tab-s3"   onclick="showSection('s3')">③ 소년의 서</button>
+    <button class="phase-tab"        id="tab-s3"   onclick="showSection('s3')">③ 전일빌딩245</button>
     <button class="phase-tab"        id="tab-s4"   onclick="showSection('s4')">④ 민주묘지</button>
     <button class="phase-tab"        id="tab-post" onclick="showSection('post')">마무리</button>
   </nav>
-
+ 
   <!-- ── 장소 1: 기록관 ── -->
   <div id="s1" class="section active">
     <div class="autosave-bar" id="autosave-msg"></div>
     <div class="section-label">기행 중 — 첫 번째 장소</div>
     <div class="section-title">5·18민주화운동기록관</div>
-
+ 
     <div class="card-connection">
       이곳의 사진과 문서와 증언도, 소설 「소년이 온다」도 모두 46년 전 하나의 사건을 기록하고 있습니다.
     </div>
@@ -477,17 +477,17 @@
       <textarea id="s1_q1" rows="6" placeholder="자유롭게 써 보세요." oninput="autoSave()"></textarea>
       <div class="char-count" id="s1_q1_count">0자</div>
     </div>
-
+ 
     <button class="save-btn" onclick="save('s1')">저장하고 다음 장소로</button>
     <div class="saved-msg" id="s1-saved"></div>
   </div>
-
+ 
   <!-- ── 장소 2: 도청 ── -->
   <div id="s2" class="section">
     <div class="autosave-bar" id="autosave-msg2"></div>
     <div class="section-label">기행 중 — 두 번째 장소</div>
     <div class="section-title">옛 전남도청<br>5·18민주광장</div>
-
+ 
     <div class="card-connection">
       동호는 살 수 있었지만 이 자리를 떠나지 않았습니다. 소설은 그 이유를 설명하지 않습니다.
     </div>
@@ -496,36 +496,36 @@
       <textarea id="s2_q1" rows="6" placeholder="자유롭게 써 보세요." oninput="autoSave()"></textarea>
       <div class="char-count" id="s2_q1_count">0자</div>
     </div>
-
+ 
     <button class="save-btn" onclick="save('s2')">저장하고 다음 장소로</button>
     <div class="saved-msg" id="s2-saved"></div>
   </div>
-
+ 
   <!-- ── 장소 3: 소년의 서 ── -->
   <div id="s3" class="section">
     <div class="autosave-bar" id="autosave-msg3"></div>
     <div class="section-label">기행 중 — 세 번째 장소</div>
-    <div class="section-title">소년의 서</div>
-
+    <div class="section-title">전일빌딩245</div>
+ 
     <div class="card-connection">
-      이 서점의 이름은 완성되지 않은 것, 소외되고 고립된 것, 해결되지 않은 일들에 대해 생각하고 싶다는 책방지기의 마음에서 왔습니다. 그 이름이 오늘 우리가 읽은 소설, 그리고 이 기행과 어떻게 닿아 있는지 생각해 보세요.
+      이 건물 안에는 1980년 5월 헬기 사격으로 생긴 245개의 탄흔이 지워지지 않은 채 남아 있습니다. 그 건물 안에 소설과 같은 이름의 북카페가 있습니다.
     </div>
     <div class="card">
-      <div class="card-question">이 서점에서 눈에 들어온 책의 제목은 무엇인가요? 왜 그 책이 눈에 들어왔나요?</div>
+      <div class="card-question">이 공간에서 눈에 들어온 책이 있다면 제목을 적고, 왜 그 책이 눈에 들어왔는지 써 보세요.</div>
       <textarea id="s3_q1" rows="6" placeholder="자유롭게 써 보세요." oninput="autoSave()"></textarea>
       <div class="char-count" id="s3_q1_count">0자</div>
     </div>
-
+ 
     <button class="save-btn" onclick="save('s3')">저장하고 다음 장소로</button>
     <div class="saved-msg" id="s3-saved"></div>
   </div>
-
+ 
   <!-- ── 장소 4: 민주묘지 ── -->
   <div id="s4" class="section">
     <div class="autosave-bar" id="autosave-msg4"></div>
     <div class="section-label">기행 중 — 네 번째 장소</div>
     <div class="section-title">국립5·18민주묘지</div>
-
+ 
     <div class="card-connection">
       소설 주인공 동호의 실존 인물로 알려진 문재학 열사의 묘비가 이곳에 있습니다. 한강은 실제 인물에게 동호라는 이름을 붙여 소설로 썼고, 이 묘지는 그의 실제 이름을 돌에 새겼습니다.
     </div>
@@ -534,48 +534,48 @@
       <textarea id="s4_q1" rows="6" placeholder="자유롭게 써 보세요." oninput="autoSave()"></textarea>
       <div class="char-count" id="s4_q1_count">0자</div>
     </div>
-
+ 
     <button class="save-btn" onclick="save('s4')">저장하고 마무리로</button>
     <div class="saved-msg" id="s4-saved"></div>
   </div>
-
+ 
   <!-- ── 마무리 ── -->
   <div id="post" class="section">
     <div class="autosave-bar" id="autosave-msg5"></div>
     <div class="section-label">기행 후 — 마무리</div>
     <div class="section-title">질문에 답하기</div>
-
+ 
     <div class="card">
       <div class="card-question">기행 전 패들렛에 기록한 나의 질문을 여기에 옮겨 적어 보세요.</div>
       <textarea id="post_q0" rows="2" placeholder="기행 전 내가 만든 질문을 써 보세요." oninput="autoSave(); updateRecall()"></textarea>
     </div>
-
+ 
     <div class="recall-box">
       <div class="recall-label">내가 품었던 질문</div>
       <div id="recall-text" class="recall-text recall-empty">위 칸에 기행 전 질문을 옮겨 적으면 여기에 표시됩니다.</div>
     </div>
-
+ 
     <div class="card">
       <div class="card-question">그 질문에 오늘 기행은 어떻게 답했나요? 답이 생겼다면 어느 장소에서 무엇이 그 답을 만들었는지, 아직 답이 없다면 질문이 어떻게 달라졌는지 써 보세요.</div>
       <textarea id="post_q1" rows="5" placeholder="자유롭게 써 보세요." oninput="autoSave()"></textarea>
       <div class="char-count" id="post_q1_count">0자</div>
     </div>
-
+ 
     <div class="card">
       <div class="card-question">오늘 기행을 통해 새롭게 생긴 질문이 있나요? 아직 답을 모르는 질문 하나를 써 보세요.</div>
       <textarea id="post_q2" rows="3" placeholder="자유롭게 써 보세요." oninput="autoSave()"></textarea>
       <div class="char-count" id="post_q2_count">0자</div>
     </div>
-
+ 
     <div class="card">
       <div class="card-question">오늘의 기행을 한 문장으로 정리해 보세요.</div>
       <textarea id="post_q3" rows="2" placeholder="한 문장으로 써 보세요." oninput="autoSave()"></textarea>
       <div class="char-count" id="post_q3_count">0자</div>
     </div>
-
+ 
     <button class="save-btn" id="submit-btn" onclick="submitAll()">기행 기록 완성하기</button>
     <div class="saved-msg" id="post-saved"></div>
-
+ 
     <div class="complete-screen" id="complete">
       <div class="complete-ornament">✦ ✦ ✦</div>
       <div class="complete-title">기록이 완성되었습니다.</div>
@@ -583,13 +583,13 @@
     </div>
   </div>
 </div>
-
+ 
 <footer style="position:fixed; bottom:0; left:0; right:0; text-align:center; padding: 0.6rem 0; font-family:'Noto Sans KR',sans-serif; font-size:0.65rem; color:#3a4f35; letter-spacing:0.15em; background: var(--bg); border-top: 1px solid #1e2e1a; z-index:50;">
   고흥고등학교
 </footer>
-
+ 
 <script>
-
+ 
   let studentName = '';
   let studentId   = '';
   let saveTimer   = null;
@@ -598,7 +598,7 @@
     's1_q1','s2_q1','s3_q1','s4_q1',
     'post_q0','post_q1','post_q2','post_q3'
   ];
-
+ 
   /* ── 표지: 시작 ── */
   function startApp() {
     const idInput   = document.getElementById('student-id').value.trim();
@@ -619,14 +619,14 @@
     document.getElementById('app').style.display = 'block';
     loadFromStorage();
   }
-
+ 
   document.getElementById('student-id').addEventListener('keydown', e => {
     if (e.key === 'Enter') document.getElementById('student-name').focus();
   });
   document.getElementById('student-name').addEventListener('keydown', e => {
     if (e.key === 'Enter') startApp();
   });
-
+ 
   /* ── 탭 전환 ── */
   function showSection(id) {
     document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
@@ -636,12 +636,12 @@
     window.scrollTo(0, 0);
     updateCharCounts();
   }
-
+ 
   /* ── localStorage 저장 ── */
   function storageKey() {
     return STORAGE_KEY_PREFIX + studentId + '_' + studentName;
   }
-
+ 
   function autoSave() {
     clearTimeout(saveTimer);
     saveTimer = setTimeout(() => {
@@ -656,7 +656,7 @@
     }, 800);
     updateCharCounts();
   }
-
+ 
   function showAutosaveMsg() {
     ['autosave-msg','autosave-msg2'].forEach(id => {
       const el = document.getElementById(id);
@@ -666,7 +666,7 @@
       }
     });
   }
-
+ 
   function loadFromStorage() {
     try {
       const saved = localStorage.getItem(storageKey());
@@ -680,7 +680,7 @@
       updateRecall();
     } catch(e) {}
   }
-
+ 
   /* ── 글자 수 ── */
   function updateCharCounts() {
     TEXT_IDS.forEach(id => {
@@ -693,7 +693,7 @@
       }
     });
   }
-
+ 
   /* ── recall 박스 실시간 반영 ── */
   function updateRecall() {
     const val = document.getElementById('post_q0').value.trim();
@@ -706,7 +706,7 @@
       el.textContent = '위 칸에 기행 전 질문을 옮겨 적으면 여기에 표시됩니다.';
     }
   }
-
+ 
   /* ── 섹션 저장 버튼 ── */
   function save(section) {
     // 해당 섹션의 textarea 비어있는지 체크
@@ -737,20 +737,20 @@
       if (next) showSection(next);
     }, 600);
   }
-
+ 
   /* ── 최종 제출 ── */
   function collectAllData() {
     const data = { id: studentId, name: studentName, timestamp: new Date().toLocaleString('ko-KR') };
     TEXT_IDS.forEach(id => { data[id] = document.getElementById(id).value; });
     return data;
   }
-
+ 
   function submitAll() {
     const data = collectAllData();
     const btn  = document.getElementById('submit-btn');
     btn.disabled = true;
     btn.textContent = '제출 중...';
-
+ 
     // ── 구글 폼 연동 지점 ──
     // FORM_ACTION_URL과 entry ID를 실제 값으로 교체하세요.
     const FORM_ACTION_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSciN23uX7HnCr6S5S_iRVJY18GZT_yxNtPdXK1w2epi4qlDmQ/formResponse';
@@ -765,7 +765,7 @@
     formData.append('entry.1010626745', data.post_q1);
     formData.append('entry.714494544',  data.post_q2);
     formData.append('entry.189065203',  data.post_q3);
-
+ 
     fetch(FORM_ACTION_URL, {
       method: 'POST',
       mode: 'no-cors',
@@ -773,7 +773,7 @@
     }).then(() => showComplete())
       .catch(() => showComplete());
   }
-
+ 
   function showComplete() {
     // 제출 완료 후 localStorage 삭제
     try { localStorage.removeItem(storageKey()); } catch(e) {}
